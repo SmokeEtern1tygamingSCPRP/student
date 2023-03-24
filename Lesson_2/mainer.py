@@ -1,4 +1,4 @@
-from student import Student
+from Lesson_2.student import Student
 from colorama import Fore
 
 
