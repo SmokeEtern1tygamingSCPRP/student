@@ -13,7 +13,6 @@ class Student:
     GPA = 10
     color = Fore.LIGHTWHITE_EX
 
-
      # Конструктор
     def __init__(self, name='', birthday=1999, group=19464, GPA=10, color=Fore.LIGHTWHITE_EX):
         self.datetime = date

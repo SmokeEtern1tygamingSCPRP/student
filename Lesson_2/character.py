@@ -1,4 +1,8 @@
 from colorama import Fore, Style
+import random
+
+def roll(probability):
+    return random.randint(0, 100) < probability
 
 class Character:
     # Поля класса
@@ -35,3 +39,6 @@ class Character:
         self.health -= max(damage, 0)
     def attack(self, target):
         target.take_damage(self.damage)
+
+    def is_alive(self):
+        return self.health > 0
